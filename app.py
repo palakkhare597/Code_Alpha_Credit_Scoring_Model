@@ -10,7 +10,7 @@ st.title("💳 Credit Scoring Model")
 st.write("Decision Tree and Random Forest Performance")
 
 # Load trained Random Forest model
-model = joblib.load("random_forest.pkl")
+model = joblib.load("rf_model.pkl")
 
 # Load feature names
 feature_names = joblib.load("feature_names.pkl")
@@ -37,7 +37,7 @@ st.dataframe(importance)
 
 fig, ax = plt.subplots(figsize=(8,5))
 ax.bar(importance["Feature"], importance["Importance"])
-plt.xticks(rotation=45)
+plt.xticks(rotation=75)
 plt.tight_layout()
 
 st.pyplot(fig)
