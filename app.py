@@ -53,10 +53,10 @@ st.write("### Accuracy")
 st.write(metrics["Accuracy"])
 
 st.write("### ROC-AUC Score")
-st.write(metrics["roc_auc_score"])
+st.write(metrics["ROC-AUC"])
 
 st.write("### Classification Report")
-st.text(metrics["classification_report"])
+st.text(metrics["Classification_Report"])
 
 st.write("### Confusion Matrix")
-st.write(metrics["confusion_matrix"])
+st.write(metrics["Confusion_Matrix"])
