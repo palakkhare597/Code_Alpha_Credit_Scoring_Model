@@ -37,7 +37,7 @@ st.dataframe(importance)
 
 fig, ax = plt.subplots(figsize=(8,5))
 ax.bar(importance["Feature"], importance["Importance"])
-plt.xticks(rotation=75)
+plt.xticks(rotation=90)
 plt.tight_layout()
 
 st.pyplot(fig)
@@ -53,10 +53,10 @@ st.write("### Accuracy")
 st.write(metrics["Accuracy"])
 
 st.write("### ROC-AUC Score")
-st.write(metrics["ROC_AUC"])
+st.write(metrics["roc_auc_score"])
 
 st.write("### Classification Report")
-st.text(metrics["Classification_Report"])
+st.text(metrics["classification_report"])
 
 st.write("### Confusion Matrix")
-st.write(metrics["Confusion_Matrix"])
+st.write(metrics["confusion_matrix"])
